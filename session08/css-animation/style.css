@@ -192,7 +192,7 @@ opacity: 1;
   color: white; 
   opacity: 1;
   position: absolute;
-  offset-path: path("M5,-200 C 100,-200 200,-300  415,-200");
+  offset-path: path("M5,-200 C 100,-200 200,-300  400,-200");
   animation: fly 5000ms infinite ease-in-out;
 
 }
