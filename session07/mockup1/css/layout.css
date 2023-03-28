@@ -3,7 +3,7 @@ body{
   padding:0;
   font-family: 'Amazon Ember', sans-serif;;
   text-align: center;
-  background-color: grey;
+  background-color: lightgray;
 }
 
 .outer{
@@ -23,7 +23,7 @@ body{
   padding:0;  
   width: 85%;  
   height: 90vh;
-  background-color: darkred;  
+ /* background-color: darkred;  */
   display: inline-block;  
   margin:auto;
 }
@@ -35,7 +35,7 @@ body{
 
   min-width: 800px;
   background-image: url(../img/Bezos_Union_Buster.png);
-  background-color: pink;
+  /*background-color: pink;*/
   min-height: 600;
   background-position: top;
   background-repeat: no-repeat;
