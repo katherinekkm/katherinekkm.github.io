@@ -1,0 +1,243 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Amazon Ember', sans-serif;;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.outer{
+  text-align: center;
+}
+
+.topnav{
+  background-color: #000;
+  height:100px;
+  text-align: left;
+  color: #FFF;
+
+}
+
+.page{
+  margin:0;
+  padding:0;  
+  width: 85%;  
+  height: 90vh;
+ /* background-color: darkred;  */
+  display: inline-block;  
+  margin:auto;
+}
+
+
+/* The hero container goes around all the content, simliar to .page, but is used for a background image that has transparency, like the amazon.com home page.  */
+
+.hero_container{
+
+  min-width: 800px;
+  background-color: pink;
+  min-height: 600;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+
+
+
+}
+
+/* these are the styles for the componwents in row 2. Each box defines a space in the grid. Within each box the layout and appearance is customized. */
+
+.box{
+  background-color: white;
+  border: 15px solid white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:100%;
+  background-size: contain;
+  position: relative;
+  overflow:hidden
+}
+
+/* each box has a title */
+
+.boxtitle{
+  text-align: left;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+   text-align: left; 
+  font-weight: bold;
+  font-size: 1em;
+      border: 1px solid white;
+}
+
+/* each box has a footer, except for "brand" as that box type has the image cover the entire box */
+
+.boxfooter{
+  text-align: left;
+  text-align: top;  
+  padding-left: 0px;
+  padding-top: 5px;
+  font-weight: regular;
+  font-size: .8em;
+  border: 1px solid white;
+}
+
+/* this is the single image box with footer */
+
+.single{
+  background-color: white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:75%;
+  background-size: cover;
+}
+
+
+/* These are the image customizations to the single image box */
+.singleimg1{
+    background-image: url(../img/warehouse_hell.jpg);  
+}
+
+/* This is the split box*/
+
+.split{
+  background-color: white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:75%;
+  background-size: cover;
+}
+
+/* split box is actually divided into three sections, one of which is the white divider between image sections */
+
+.split_top{
+    background-color: white;
+    width: 100%;
+    height: 45%;
+
+}
+
+.split_middle{
+ background-color: white; 
+     width: 100%;
+    height:10%;
+
+}
+.split_bottom{
+  background-color: green;
+    width: 100%;
+    height:45%;
+}
+
+/* These are the images that go into the top and bottom sections of splitbox*/
+
+.split_topimg{
+    background-image: url(../img/worker.jpg);  
+
+}
+
+.split_bottomimg{
+    background-image: url(../img/robots.jpg);  
+}
+
+/* quarter contains four images.*/
+
+.quarter{
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:75%;
+  background-size: cover;
+
+}
+
+/* definitions for the four images that appear in quarter box*/
+
+
+.quarterimg1{
+  background-color: grey;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:auto;
+  background-image: url(../img/bozos.jpg);
+  background-size: cover;
+
+}
+
+.quarterimg2{
+  background-color: grey;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:auto;
+  background-image: url(../img/drevil.jpg);
+  background-size: cover;
+  }
+
+.quarterimg3{
+  background-color: grey;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:auto;
+  background-image: url(../img/weenrocket.jpg);
+  background-size: cover;
+  }
+
+ .quarterimg4{
+  background-color: grey;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:auto;
+  background-image: url(../img/evilrock.jpg);
+  background-size: cover;
+  } 
+
+
+/* This is the brand box without a footer */
+
+
+.brand{
+background-color: white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:100%;
+  background-size: cover;
+}
+
+/* This is the inage that goes with the brandbox */
+
+.brandimg{
+  background-image: url(../img/labor.jpg);
+}
+
+/* scroll is supposed to be more of a scrolling bar, but instead it is just a single column component that contains an image. I could also break out the background inmage into a seperate class is customzing.*/
+.scroll{
+  background-image: url(../img/amazonfrown.jpg);
+  background-color: white;
+  border: 15px solid white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: 85%;
+  background-size: cover;
+
+}
+
+/* and the title to scroll is customizable */
+
+.scroll_title{
+  background-color: white;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
