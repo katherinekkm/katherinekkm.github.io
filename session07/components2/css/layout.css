@@ -1,0 +1,65 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Amazon Ember', sans-serif;;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.outer{
+  text-align: center;
+}
+
+.topnav{
+  background-color: #000;
+  height:100px;
+  text-align: left;
+  color: #FFF;
+
+}
+
+.page{
+  margin:0;
+  padding:0;  
+  width: 85%;  
+  height: 90vh;
+ /* background-color: darkred;  */
+  display: inline-block;  
+  margin:auto;
+}
+
+#change{
+display: inline-block;
+}
+
+#change:hover{
+  cursor: pointer;
+  color: orange;
+  -webkit-transition: color 1s ease-out;
+
+}
+
+
+/* scroll is supposed to be more of a scrolling bar, but instead it is just a single column component that contains an image. I could also break out the background inmage into a seperate class is customzing.*/
+.scroll{
+  background-image: url(../img/amazonfrown.jpg);
+  background-color: white;
+  border: 15px solid white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: 85%;
+  background-size: cover;
+
+}
+
+/* and the title to scroll is customizable */
+
+.scroll_title{
+  background-color: white;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
