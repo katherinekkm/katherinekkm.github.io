@@ -1,0 +1,486 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Amazon Ember', sans-serif;;
+  text-align: center;
+  background-color: lightgray;
+}
+
+a{
+  color:white;
+  font-size:16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-left: 30px;
+
+
+}
+
+a:hover {
+  color:#FF9900;  
+ }
+
+a:active {
+  color:#CCC;
+}
+
+p{
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 1.25em;
+
+}
+
+.outer{
+  text-align: center;
+}
+
+.topnav{
+  background-color: #000;
+  height:100px;
+  text-align: left;
+  color: #FFF;
+
+}
+
+.page{
+  margin:0;
+  padding:0;  
+  width: 85%;  
+  height: 90vh;
+ /* background-color: darkred;  */
+  display: inline-block;  
+  margin:auto;
+}
+
+
+
+/* top navigation styles */ 
+.topofpage{
+  padding:0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: black;
+}
+
+.logo{
+    max-width: 35%;
+    background-color: black;
+}
+
+.logoimg{
+  max-width: 150px;
+}
+
+.navbar{  
+display: flex;
+flex-direction: row;
+flex-wrao: nowrap;
+  flex-grow: 1;
+  align-items: left;
+  justify-content: flex-start;
+  margin-top: 0px;
+  text-align: left;
+
+
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+   padding: 0px;
+}
+
+.search{
+  max-width: 100px;
+  margin-left:auto;
+  margin-right: 0px;
+  margin-top:0px;
+text-align: right;
+
+}
+
+
+.nav img{
+  max-width: 40%;
+  margin-top:0px;
+}
+
+.menu {
+  display:none;
+}
+
+
+  
+.content{
+  background-color: #1a98ff;
+  color: white;
+
+}
+
+#menuoverlay{
+  position: absolute;
+  height: 95vh;
+
+  background-color: #e67f2d;
+  width: 50%;
+  display: none;
+margin-top: 0px;
+  margin-left: 10px;
+  padding: 10px;
+  display: none;
+  z-index: 1;
+}
+
+
+
+
+@media screen and (max-width:768px){
+
+  .page{
+    max-width:100%;
+
+
+  }
+
+
+  .menu{
+    display: inline-block;
+    color: white;
+    margin-left: 55%; 
+    padding-right: 0px;
+    background-color: black;
+  }
+
+.menuimg{
+  max-width: 50px;
+  background-color: black;
+  margin-left:auto;
+  margin-top:0;
+
+}
+
+.innermenu{
+  margin-top: 50px;
+}
+.menuitems{
+  margin-top: 0;
+  font-size: 28px;
+}
+
+#show{
+  cursor: pointer;
+}
+
+#close{
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 60px;
+  cursor: pointer;
+  justify-content: right;
+}
+
+
+  .navbar{
+    display: none;
+  }
+  
+
+  p{
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: .75em;
+
+}
+
+
+}
+
+
+
+
+
+
+/* The hero container goes around all the content, simliar to .page, but is used for a background image that has transparency, like the amazon.com home page.  */
+
+
+.hero_container{
+
+  min-width: 500px;
+  background-image: url(../img/Bezos_Union_Buster.png);
+  /*background-color: pink;*/
+  min-height: 300;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+
+
+  /* Image Source: Joe Piette; licensed under the Creative Commons Attribution 2.0 Generic (CC BY 2.0) license. */
+
+}
+
+
+  /* page container for the about page */
+
+.page_container{
+    min-width: 500px;
+   /* background-image: url(../img/Bezos_Union_Buster.png); */
+  background-color: white;
+  min-height: 300;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+
+
+
+}
+
+  /* text styling for page container */
+
+.page2header{
+  background-image: url(../img/aboutheader.jpg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0 auto;
+  padding:0;
+  width: 100%;
+  height:100%;
+  background-size: contain;
+  position: relative;
+  overflow:hidden
+
+}
+
+.aboutbox{
+  background-color: white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:100%;
+  background-size: cover;
+
+}
+
+
+.aboutimg{
+    background-image: url(../img/aboutimg.jpg);  
+}
+
+.aboutimg1{
+    background-image: url(../img/aboutimg1.jpg);  
+}
+
+.aboutimg2{
+    background-image: url(../img/aboutimg2.jpg);  
+}
+
+/* these are the styles for the componwents in row 2 on the main page. Each box defines a space in the grid. Within each box the layout and appearance is customized. */
+
+.box{
+  background-color: white;
+  border: 15px solid white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:100%;
+  background-size: contain;
+  position: relative;
+  overflow:hidden
+}
+
+/* each box has a title */
+
+.boxtitle{
+  text-align: left;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+   text-align: left; 
+  font-weight: bold;
+  font-size: 1em;
+      border: 1px solid white;
+}
+
+/* each box has a footer, except for "brand" as that box type has the image cover the entire box */
+
+.boxfooter{
+  text-align: left;
+  text-align: top;  
+  padding-left: 0px;
+  padding-top: 5px;
+  font-weight: regular;
+  font-size: .8em;
+  border: 1px solid white;
+}
+
+/* this is the single image box with footer */
+
+.single{
+  background-color: white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:75%;
+  background-size: cover;
+}
+
+/* These are the image customizations to the single image box */
+.singleimg1{
+    background-image: url(../img/warehouse_hell.jpg);  
+}
+
+/* This is the split box*/
+
+
+
+.split{
+  background-color: white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:75%;
+  background-size: cover;
+}
+
+/* split box is actually divided into three sections, one of which is the white divider between image sections */
+
+.split_top{
+    background-color: white;
+    width: 100%;
+    height: 45%;
+
+}
+
+.split_middle{
+ background-color: white; 
+     width: 100%;
+    height:10%;
+
+}
+.split_bottom{
+  background-color: green;
+    width: 100%;
+    height:45%;
+}
+
+/* These are the images that go into the top and bottom sections of splitbox*/
+
+
+.split_topimg{
+    background-image: url(../img/worker.jpg);  
+
+}
+
+.split_bottomimg{
+    background-image: url(../img/robots.jpg);  
+}
+
+/* quarter contains four images.*/
+
+.quarter{
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:75%;
+  background-size: cover;
+
+}
+
+/* definitions for the four images that appear in quarter box*/
+
+
+.quarterimg1{
+  background-color: grey;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:auto;
+  background-image: url(../img/bozos.jpg);
+  background-size: cover;
+
+}
+
+.quarterimg2{
+  background-color: grey;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:auto;
+  background-image: url(../img/drevil.jpg);
+  background-size: cover;
+  }
+
+.quarterimg3{
+  background-color: grey;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:auto;
+  background-image: url(../img/weenrocket.jpg);
+  background-size: cover;
+  }
+
+ .quarterimg4{
+  background-color: grey;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:auto;
+  background-image: url(../img/evilrock.jpg);
+  background-size: cover;
+  } 
+
+  /* This is the brand box without a footer */
+
+
+.brand{
+background-color: white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height:100%;
+  background-size: cover;
+}
+
+/* This is the inage that goes with the brandbox */
+
+.brandimg{
+  background-image: url(../img/labor.jpg);
+}
+
+/* scroll is supposed to be more of a scrolling bar, but instead it is just a single column component that contains an image. I could also break out the background inmage into a seperate class is customzing.*/
+
+.scroll{
+  background-image: url(../img/amazonfrown.jpg);
+  background-color: white;
+  border: 15px solid white;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  height: 85%;
+  background-size: cover;
+
+}
+
+/* and the title to scroll is customizable */
+
+.scroll_title{
+  background-color: white;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
