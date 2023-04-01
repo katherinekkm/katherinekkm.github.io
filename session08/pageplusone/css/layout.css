@@ -17,6 +17,16 @@ a{
 
 }
 
+.linkstyle{
+    color:white;
+  font-size:16px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-left: 30px;
+
+}
+
 a:hover {
   color:#FF9900;  
  }
